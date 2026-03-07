@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shopease-config
+  namespace: shopease
+data:
+  EUREKA_HOST: "eureka-server"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka:9092"
+  REDIS_PORT: "6379"
+  DB_USERNAME: "root"
+  SMTP_HOST: "smtp.gmail.com"
+  SMTP_PORT: "587"
+  SMTP_USERNAME: "noreply@shopease.com"
+  SMTP_FROM: "noreply@shopease.com"
